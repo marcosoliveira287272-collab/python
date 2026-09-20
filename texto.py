@@ -1,5 +1,7 @@
-from minha_biblioteca import eh_par
+"""Funções para manipulação de textos."""
 
-def test_eh_par():
-    assert eh_par(10) is True
-    assert eh_par(7) is False
+def contar_palavras(texto: str) -> int:
+    return len(texto.split())
+
+def inverter_texto(texto: str) -> str:
+    return texto[::-1]
